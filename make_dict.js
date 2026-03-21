@@ -22,7 +22,13 @@ fs.writeFileSync(path.join(__dirname, 'docs/wams.json'), JSON.stringify(getWamRo
 // Write to READMED
 let list = ""
 for(const wam of getWamRoots()) {
-    list += `- [${wam}](${WEB_ROOT}${wam}/index.js)\n`
+    const modified = wam.replaceAll("\\", "/")
+    list += `
+|    |${wam}                         |
+|----|-------------------------------|
+|Use |${WEB_ROOT}${modified}/index.js|
+|Test|${WEB_ROOT}#${modified}        |
+`
 }
 
 let final = fs.readFileSync(path.join(__dirname, 'RAW_README.md'), 'utf-8')

@@ -6,22 +6,98 @@ Mostly generated using FaustIDE.
 Test host [here](https://jempasam.github.io/SamWAMS/)
 
 # All the WAMS
-- [module\filter\bandpass](https://jempasam.github.io/SamWAMS/module\filter\bandpass/index.js)
-- [module\filter\bandpass_resonant](https://jempasam.github.io/SamWAMS/module\filter\bandpass_resonant/index.js)
-- [module\filter\vibrato](https://jempasam.github.io/SamWAMS/module\filter\vibrato/index.js)
-- [module\generator\bird](https://jempasam.github.io/SamWAMS/module\generator\bird/index.js)
-- [module\generator\fire](https://jempasam.github.io/SamWAMS/module\generator\fire/index.js)
-- [module\generator\insects](https://jempasam.github.io/SamWAMS/module\generator\insects/index.js)
-- [module\generator\occillator](https://jempasam.github.io/SamWAMS/module\generator\occillator/index.js)
-- [module\generator\rain](https://jempasam.github.io/SamWAMS/module\generator\rain/index.js)
-- [module\generator\thunder](https://jempasam.github.io/SamWAMS/module\generator\thunder/index.js)
-- [module\generator\violon](https://jempasam.github.io/SamWAMS/module\generator\violon/index.js)
-- [module\generator\voice](https://jempasam.github.io/SamWAMS/module\generator\voice/index.js)
-- [module\generator\wind](https://jempasam.github.io/SamWAMS/module\generator\wind/index.js)
-- [module\generator\windchimes](https://jempasam.github.io/SamWAMS/module\generator\windchimes/index.js)
-- [simple\effect\graingenerator](https://jempasam.github.io/SamWAMS/simple\effect\graingenerator/index.js)
-- [simple\instrument\fmsynth](https://jempasam.github.io/SamWAMS/simple\instrument\fmsynth/index.js)
-- [simple\instrument\frenchbell](https://jempasam.github.io/SamWAMS/simple\instrument\frenchbell/index.js)
-- [simple\instrument\organ](https://jempasam.github.io/SamWAMS/simple\instrument\organ/index.js)
-- [simple\instrument\paradigma9](https://jempasam.github.io/SamWAMS/simple\instrument\paradigma9/index.js)
-- [simple\instrument\superclav](https://jempasam.github.io/SamWAMS/simple\instrument\superclav/index.js)
+
+|    |module\filter\bandpass                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/bandpass/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/bandpass        |
+
+|    |module\filter\bandpass_resonant                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/bandpass_resonant/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/bandpass_resonant        |
+
+|    |module\filter\vibrato                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/vibrato/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/vibrato        |
+
+|    |module\generator\bird                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/bird/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/bird        |
+
+|    |module\generator\fire                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/fire/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/fire        |
+
+|    |module\generator\insects                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/insects/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/insects        |
+
+|    |module\generator\occillator                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/occillator/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/occillator        |
+
+|    |module\generator\rain                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/rain/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/rain        |
+
+|    |module\generator\thunder                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/thunder/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/thunder        |
+
+|    |module\generator\violon                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/violon/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/violon        |
+
+|    |module\generator\voice                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/voice/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/voice        |
+
+|    |module\generator\wind                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/wind/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/wind        |
+
+|    |module\generator\windchimes                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/windchimes/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/windchimes        |
+
+|    |simple\effect\graingenerator                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/effect/graingenerator/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/effect/graingenerator        |
+
+|    |simple\instrument\fmsynth                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/instrument/fmsynth/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/instrument/fmsynth        |
+
+|    |simple\instrument\frenchbell                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/instrument/frenchbell/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/instrument/frenchbell        |
+
+|    |simple\instrument\organ                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/instrument/organ/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/instrument/organ        |
+
+|    |simple\instrument\paradigma9                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/instrument/paradigma9/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/instrument/paradigma9        |
+
+|    |simple\instrument\superclav                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/instrument/superclav/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/instrument/superclav        |
