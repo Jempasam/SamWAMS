@@ -1,0 +1,20 @@
+{
+    "identifier": "fr.grame.faust.frenchbell",
+    "name": "frenchbell",
+    "vendor": "Faust User",
+    "description": "French church bell physical model.",
+    "version": "1.0.0",
+    "apiVersion": "2.0.0",
+    "keywords": [],
+    "isInstrument": true,
+    "website": "",
+    "hasAudioInput": false,
+    "hasAudioOutput": true,
+    "hasMidiInput": true,
+    "hasMidiOutput": false,
+    "faustMeta": {
+        "poly": true,
+        "fft": false,
+        "effect": null
+    }
+}

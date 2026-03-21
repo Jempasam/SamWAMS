@@ -1,0 +1,21 @@
+[
+  "module\\filter\\bandpass",
+  "module\\filter\\bandpass_resonant",
+  "module\\filter\\vibrato",
+  "module\\generator\\bird",
+  "module\\generator\\fire",
+  "module\\generator\\insects",
+  "module\\generator\\occillator",
+  "module\\generator\\rain",
+  "module\\generator\\thunder",
+  "module\\generator\\violon",
+  "module\\generator\\voice",
+  "module\\generator\\wind",
+  "module\\generator\\windchimes",
+  "simple\\effect\\graingenerator",
+  "simple\\instrument\\fmsynth",
+  "simple\\instrument\\frenchbell",
+  "simple\\instrument\\organ",
+  "simple\\instrument\\paradigma9",
+  "simple\\instrument\\superclav"
+]

@@ -1,0 +1,116 @@
+{
+    "name": "bandpass",
+    "filename": "bandpass.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/oscillators.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/basics.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 262192,
+    "code": "GGjG",
+    "inputs": 1,
+    "outputs": 1,
+    "meta": [
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.18.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "filename": "bandpass.dsp"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "bandpass"
+        },
+        {
+            "oscillators.lib/name": "Faust Oscillator Library"
+        },
+        {
+            "oscillators.lib/version": "1.5.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "bandpass",
+            "items": [
+                {
+                    "type": "vslider",
+                    "label": "Attenuation",
+                    "shortname": "Attenuation",
+                    "address": "/bandpass/Attenuation",
+                    "index": 262144,
+                    "meta": [
+                        {
+                            "style": "knob"
+                        }
+                    ],
+                    "init": 0.5,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                },
+                {
+                    "type": "vslider",
+                    "label": "Frequency",
+                    "shortname": "Frequency",
+                    "address": "/bandpass/Frequency",
+                    "index": 262164,
+                    "meta": [
+                        {
+                            "scale": "log"
+                        },
+                        {
+                            "style": "knob"
+                        },
+                        {
+                            "unit": "Hz"
+                        }
+                    ],
+                    "init": 1,
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                }
+            ]
+        }
+    ]
+}
