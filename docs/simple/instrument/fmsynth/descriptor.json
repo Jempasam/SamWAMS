@@ -2,7 +2,7 @@
     "identifier": "fr.grame.faust.fmfx",
     "name": "fmfx",
     "vendor": "Faust User",
-    "description": "",
+    "description": "A FM FX Synthesizer with reverb and flanger effects",
     "version": "1.0.0",
     "apiVersion": "2.0.0",
     "keywords": [],

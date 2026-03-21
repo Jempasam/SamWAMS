@@ -17,6 +17,11 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 |Use |https://jempasam.github.io/SamWAMS/module/filter/bandpass_resonant/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#module/filter/bandpass_resonant        |
 
+|    |module\filter\pitchshifter                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/pitchshifter/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/pitchshifter        |
+
 |    |module\filter\vibrato                         |
 |----|-------------------------------|
 |Use |https://jempasam.github.io/SamWAMS/module/filter/vibrato/index.js|
@@ -72,10 +77,20 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 |Use |https://jempasam.github.io/SamWAMS/module/generator/windchimes/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#module/generator/windchimes        |
 
+|    |simple\effect\flanger                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/effect/flanger/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/effect/flanger        |
+
 |    |simple\effect\graingenerator                         |
 |----|-------------------------------|
 |Use |https://jempasam.github.io/SamWAMS/simple/effect/graingenerator/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#simple/effect/graingenerator        |
+
+|    |simple\effect\granular_reverse                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/simple/effect/granular_reverse/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#simple/effect/granular_reverse        |
 
 |    |simple\instrument\fmsynth                         |
 |----|-------------------------------|

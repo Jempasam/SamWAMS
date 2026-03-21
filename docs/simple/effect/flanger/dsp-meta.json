@@ -1,0 +1,178 @@
+{
+    "name": "flanger",
+    "filename": "flanger.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/oscillators.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/maths.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 1310788,
+    "code": "aArJ",
+    "inputs": 2,
+    "outputs": 1,
+    "meta": [
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.18.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "filename": "flanger.dsp"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "flanger"
+        },
+        {
+            "oscillators.lib/name": "Faust Oscillator Library"
+        },
+        {
+            "oscillators.lib/version": "1.5.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "flanger",
+            "items": [
+                {
+                    "type": "hgroup",
+                    "label": "Delay",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "Frequence",
+                            "shortname": "Frequence",
+                            "address": "/flanger/Delay/Frequence",
+                            "index": 1310760,
+                            "meta": [
+                                {
+                                    "0": ""
+                                },
+                                {
+                                    "scale": "log"
+                                },
+                                {
+                                    "style": "knob"
+                                },
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 20,
+                            "min": 0.1,
+                            "max": 1000,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "MaxDelay",
+                            "shortname": "MaxDelay",
+                            "address": "/flanger/Delay/MaxDelay",
+                            "index": 1310744,
+                            "meta": [
+                                {
+                                    "1": ""
+                                },
+                                {
+                                    "scale": "log"
+                                },
+                                {
+                                    "style": "knob"
+                                },
+                                {
+                                    "unit": "s"
+                                }
+                            ],
+                            "init": 0.01,
+                            "min": 0.001,
+                            "max": 1,
+                            "step": 0.001
+                        }
+                    ]
+                },
+                {
+                    "type": "hgroup",
+                    "label": "Mix",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "Dry",
+                            "shortname": "Dry",
+                            "address": "/flanger/Mix/Dry",
+                            "index": 262144,
+                            "meta": [
+                                {
+                                    "2": ""
+                                },
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 0,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "Wet",
+                            "shortname": "Wet",
+                            "address": "/flanger/Mix/Wet",
+                            "index": 262148,
+                            "meta": [
+                                {
+                                    "3": ""
+                                },
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 1,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

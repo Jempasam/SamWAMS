@@ -1,19 +1,19 @@
 {
-    "identifier": "fr.grame.faust.organ",
-    "name": "organ",
-    "vendor": "Remi Chapelle",
-    "description": "Organ physical model.",
+    "identifier": "fr.grame.faust.flanger",
+    "name": "flanger",
+    "vendor": "Faust User",
+    "description": "",
     "version": "1.0.0",
     "apiVersion": "2.0.0",
     "keywords": [],
-    "isInstrument": true,
+    "isInstrument": false,
     "website": "",
-    "hasAudioInput": false,
+    "hasAudioInput": true,
     "hasAudioOutput": true,
     "hasMidiInput": true,
     "hasMidiOutput": false,
     "faustMeta": {
-        "poly": true,
+        "poly": false,
         "fft": false,
         "effect": null
     }

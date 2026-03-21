@@ -1,6 +1,7 @@
 [
   "module\\filter\\bandpass",
   "module\\filter\\bandpass_resonant",
+  "module\\filter\\pitchshifter",
   "module\\filter\\vibrato",
   "module\\generator\\bird",
   "module\\generator\\fire",
@@ -12,7 +13,9 @@
   "module\\generator\\voice",
   "module\\generator\\wind",
   "module\\generator\\windchimes",
+  "simple\\effect\\flanger",
   "simple\\effect\\graingenerator",
+  "simple\\effect\\granular_reverse",
   "simple\\instrument\\fmsynth",
   "simple\\instrument\\frenchbell",
   "simple\\instrument\\organ",

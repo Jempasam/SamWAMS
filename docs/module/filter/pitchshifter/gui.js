@@ -19,8 +19,7 @@ class FaustDefaultGui extends HTMLElement {
 		this.faustNode = faustNode;
 		this.root = this.attachShadow({ mode: 'open' });
 		const $style = document.createElement('style');
-		$style.innerHTML = style
-			.replaceAll("rgba(80, 80, 80, 0.75)", "rgba(150, 130, 89, 0.75)")
+		$style.innerHTML = style;
 		this.root.appendChild($style);
 		const $container = document.createElement('div');
 		$container.style.margin = '0';
