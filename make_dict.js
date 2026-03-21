@@ -3,6 +3,10 @@ const fs = require("fs")
 
 const WAM_ROOT = path.join(__dirname, 'docs')
 
+// Settings
+const WEB_ROOT = "https://jempasam.github.io/SamWAMS/"
+
+// Create wam dict
 function getWamRoots() {
     const faustRoots = fs.readdirSync(WAM_ROOT, { withFileTypes: true, recursive: true })
         .filter(dirent => dirent.isDirectory())
@@ -12,4 +16,15 @@ function getWamRoots() {
     return faustRoots
 }
 
+// Write to JSON
 fs.writeFileSync(path.join(__dirname, 'docs/wams.json'), JSON.stringify(getWamRoots(), null, 2))
+
+// Write to READMED
+let list = ""
+for(const wam of getWamRoots()) {
+    list += `- [${wam}](${WEB_ROOT}${wam}/index.js)\n`
+}
+
+let final = fs.readFileSync(path.join(__dirname, 'RAW_README.md'), 'utf-8')
+final = final.replace("{{WAM_LIST}}", list)
+fs.writeFileSync(path.join(__dirname, 'README.md'), final)
