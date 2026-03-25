@@ -10,8 +10,9 @@
     "website": "",
     "hasAudioInput": false,
     "hasAudioOutput": true,
-    "hasMidiInput": true,
+    "hasMidiInput": false,
     "hasMidiOutput": false,
+    "thumbnail": "thumbnail.png",
     "faustMeta": {
         "poly": false,
         "fft": false,
