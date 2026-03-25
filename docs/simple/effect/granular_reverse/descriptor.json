@@ -1,6 +1,6 @@
 {
     "identifier": "fr.grame.faust.reverse_granul",
-    "name": "reverse_granul",
+    "name": "Reverse Grain",
     "vendor": "Jempasam",
     "description": "A granular effect with reversed grain playback",
     "version": "0.0",
@@ -10,7 +10,7 @@
     "website": "",
     "hasAudioInput": true,
     "hasAudioOutput": true,
-    "hasMidiInput": true,
+    "hasMidiInput": false,
     "hasMidiOutput": false,
     "faustMeta": {
         "poly": false,

@@ -1,6 +1,6 @@
 {
     "identifier": "fr.grame.faust.untitled",
-    "name": "untitled",
+    "name": "Grain Generator",
     "vendor": "Faust User",
     "description": "",
     "version": "1.0.0",
@@ -10,7 +10,7 @@
     "website": "",
     "hasAudioInput": true,
     "hasAudioOutput": true,
-    "hasMidiInput": true,
+    "hasMidiInput": false,
     "hasMidiOutput": false,
     "faustMeta": {
         "poly": false,
