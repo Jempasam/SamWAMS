@@ -43,16 +43,32 @@ function removeHost(faust_root) {
     }catch(e){}
 }
 
-//// Additional style metadata ////
-function applyStyleMetadata(faust_root) {
-    const meta = JSON.parse(fs.readFileSync(path.join(faust_root, 'dsp-meta.json'), 'utf-8')).meta
+//// Additional metadata////
+function applyMetadata(faust_root) {
+    const meta = getMeta(faust_root)
+
+    // Custom style
     let chain = ""
     if(meta.back_color) chain += `.replaceAll("rgba(80, 80, 80, 0.75)", "${meta.back_color}")`
-
+    
     const guiPath = path.join(faust_root, 'gui.js')
-    const gui = fs.readFileSync(guiPath, 'utf-8')
-    gui.replace("$style.innerHTML = style", `$style.innerHTML = style${chain}`)
+    let gui = fs.readFileSync(guiPath, 'utf-8')
+    if(chain!="") gui = gui.replace(/\$style\.innerHTML = style[^;]*;/, `$style.innerHTML = style${chain};`)
     fs.writeFileSync(guiPath, gui)
+
+    // IO
+    if(meta.io){
+        const split = meta.io.split('->')
+        const modification = {
+            hasAudioInput: split[0].includes('a'),
+            hasAudioOutput: split[1].includes('a'),
+            hasMidiInput: split[0].includes('m'),
+            hasMidiOutput: split[1].includes('m'),
+        }
+        const descPath = path.join(faust_root, 'descriptor.json')
+        const desc  = {...JSON.parse(fs.readFileSync(descPath, 'utf-8')), ...modification}
+        fs.writeFileSync(descPath, JSON.stringify(desc, null, 2))
+    }
 }
 
 //// Get faust roots ////
@@ -68,6 +84,12 @@ function getFaustRoots() {
 
 console.log(getFaustRoots())
 
+function getMeta(faust_root){
+    const meta = JSON.parse(fs.readFileSync(path.join(faust_root, 'dsp-meta.json'), 'utf-8')).meta
+        .flatMap(obj => Object.entries(obj))
+        .reduce((acc, [key, value]) => ({...acc, [key]: value}), {})
+    return meta
+}
 
 
 //// Execute ////
@@ -75,5 +97,5 @@ for(const faust_root of getFaustRoots()) {
     removeDtsFiles(faust_root)
     removeLibs(faust_root)
     removeHost(faust_root)
-    applyStyleMetadata(faust_root)
+    applyMetadata(faust_root)
 }

@@ -25,6 +25,9 @@
             "basics.lib/name": "Faust Basic Element Library"
         },
         {
+            "back_color": "#152171"
+        },
+        {
             "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
         },
         {
