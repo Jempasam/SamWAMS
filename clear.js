@@ -43,6 +43,18 @@ function removeHost(faust_root) {
     }catch(e){}
 }
 
+//// Additional style metadata ////
+function applyStyleMetadata(faust_root) {
+    const meta = JSON.parse(fs.readFileSync(path.join(faust_root, 'dsp-meta.json'), 'utf-8')).meta
+    let chain = ""
+    if(meta.back_color) chain += `.replaceAll("rgba(80, 80, 80, 0.75)", "${meta.back_color}")`
+
+    const guiPath = path.join(faust_root, 'gui.js')
+    const gui = fs.readFileSync(guiPath, 'utf-8')
+    gui.replace("$style.innerHTML = style", `$style.innerHTML = style${chain}`)
+    fs.writeFileSync(guiPath, gui)
+}
+
 //// Get faust roots ////
 const WAM_ROOT = path.join(__dirname, 'docs')
 
@@ -57,9 +69,11 @@ function getFaustRoots() {
 console.log(getFaustRoots())
 
 
+
 //// Execute ////
 for(const faust_root of getFaustRoots()) {
     removeDtsFiles(faust_root)
     removeLibs(faust_root)
     removeHost(faust_root)
+    applyStyleMetadata(faust_root)
 }
