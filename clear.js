@@ -71,6 +71,17 @@ function applyMetadata(faust_root) {
     }
 }
 
+//// Add thumbnail link to descriptor ////
+function addThumbnailLink(faust_root) {
+    const imgUrl = fs.readdirSync(faust_root)
+        .find(file => file.endsWith('.png') || file.endsWith('.jpg') || file.endsWith('.jpeg'))
+    if(imgUrl) {
+        const descPath = path.join(faust_root, 'descriptor.json')
+        const desc  = {...JSON.parse(fs.readFileSync(descPath, 'utf-8')), thumbnail: imgUrl}
+        fs.writeFileSync(descPath, JSON.stringify(desc, null, 2))
+    }
+}
+
 //// Get faust roots ////
 const WAM_ROOT = path.join(__dirname, 'docs')
 
@@ -98,4 +109,5 @@ for(const faust_root of getFaustRoots()) {
     removeLibs(faust_root)
     removeHost(faust_root)
     applyMetadata(faust_root)
+    addThumbnailLink(faust_root)
 }

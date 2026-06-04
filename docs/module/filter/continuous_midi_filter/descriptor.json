@@ -1,0 +1,26 @@
+{
+  "identifier": "fr.grame.faust.continuous_midi_filter",
+  "name": "continuous_midi_filter",
+  "vendor": "Samuel Demont",
+  "description": "A filter that contiously adjust pitch of an audio input depending on his last midi inputs. With only one voice at a time.",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "midi",
+    "pitch",
+    "enveloppe",
+    "gain"
+  ],
+  "isInstrument": true,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": true,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": true,
+    "fft": false,
+    "effect": null
+  }
+}

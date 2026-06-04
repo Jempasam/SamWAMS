@@ -1,21 +1,21 @@
 {
-    "identifier": "fr.grame.faust.voice",
-    "name": "voice",
-    "vendor": "Faust User",
-    "description": "",
-    "version": "1.0.0",
-    "apiVersion": "2.0.0",
-    "keywords": [],
-    "isInstrument": false,
-    "website": "",
-    "hasAudioInput": false,
-    "hasAudioOutput": true,
-    "hasMidiInput": false,
-    "hasMidiOutput": false,
-    "thumbnail": "thumbnail.png",
-    "faustMeta": {
-        "poly": false,
-        "fft": false,
-        "effect": null
-    }
+  "identifier": "fr.grame.faust.voice",
+  "name": "voice",
+  "vendor": "Faust User",
+  "description": "",
+  "version": "1.0.0",
+  "apiVersion": "2.0.0",
+  "keywords": [],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": false,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "thumbnail": "thumbnail.png",
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
 }

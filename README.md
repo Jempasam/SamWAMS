@@ -7,6 +7,16 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 
 # All the WAMS
 
+|    |module\filter\alarm                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/alarm/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/alarm        |
+
+|    |module\filter\arpeggio_shifter                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/arpeggio_shifter/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/arpeggio_shifter        |
+
 |    |module\filter\bandpass                         |
 |----|-------------------------------|
 |Use |https://jempasam.github.io/SamWAMS/module/filter/bandpass/index.js|
@@ -16,6 +26,26 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 |----|-------------------------------|
 |Use |https://jempasam.github.io/SamWAMS/module/filter/bandpass_resonant/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#module/filter/bandpass_resonant        |
+
+|    |module\filter\continuous_midi_filter                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/continuous_midi_filter/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/continuous_midi_filter        |
+
+|    |module\filter\endless_risset                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/endless_risset/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/endless_risset        |
+
+|    |module\filter\large_arpeggio_shifter                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/large_arpeggio_shifter/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/large_arpeggio_shifter        |
+
+|    |module\filter\midi_filter                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/filter/midi_filter/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/filter/midi_filter        |
 
 |    |module\filter\pitchshifter                         |
 |----|-------------------------------|
@@ -51,6 +81,11 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 |----|-------------------------------|
 |Use |https://jempasam.github.io/SamWAMS/module/generator/rain/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#module/generator/rain        |
+
+|    |module\generator\supersaw                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/supersaw/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/supersaw        |
 
 |    |module\generator\thunder                         |
 |----|-------------------------------|

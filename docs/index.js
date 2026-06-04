@@ -39,7 +39,7 @@ document.body.appendChild(pianoGui)
 
 // The sound //
 const audio = document.createElement("audio")
-audio.src = "./sound.wav"
+audio.src = import.meta.resolve('./sound.wav')
 audio.crossOrigin = "anonymous"
 audio.loop = true
 audio.controls = true

@@ -24,6 +24,9 @@
     "outputs": 1,
     "meta": [
         {
+            "io": "->a"
+        },
+        {
             "basics.lib/name": "Faust Basic Element Library"
         },
         {

@@ -1,0 +1,160 @@
+{
+    "name": "midi_filter",
+    "filename": "midi_filter.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/oscillators.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 262324,
+    "code": "SOI=",
+    "inputs": 0,
+    "outputs": 2,
+    "meta": [
+        {
+            "author": "Laurent Pottier"
+        },
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.18.0"
+        },
+        {
+            "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "copyright": "(c)ECLLA 2022"
+        },
+        {
+            "description": "An infinite glissando generator."
+        },
+        {
+            "filename": "midi_filter.dsp"
+        },
+        {
+            "keywords": "module, generator, glissando"
+        },
+        {
+            "license": "BSD"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "midi_filter"
+        },
+        {
+            "oscillators.lib/lf_sawpos_phase:author": "Bart Brouns, revised by Stéphane Letz"
+        },
+        {
+            "oscillators.lib/lf_sawpos_phase:licence": "STK-4.3"
+        },
+        {
+            "oscillators.lib/name": "Faust Oscillator Library"
+        },
+        {
+            "oscillators.lib/version": "1.5.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.5.0"
+        },
+        {
+            "version": "1.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "midi_filter",
+            "items": [
+                {
+                    "type": "checkbox",
+                    "label": "Direction",
+                    "shortname": "Direction",
+                    "address": "/midi_filter/Direction",
+                    "index": 262176
+                },
+                {
+                    "type": "hslider",
+                    "label": "Median",
+                    "shortname": "Median",
+                    "address": "/midi_filter/Median",
+                    "index": 262212,
+                    "init": 0.5,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.001
+                },
+                {
+                    "type": "hslider",
+                    "label": "Period",
+                    "shortname": "Period",
+                    "address": "/midi_filter/Period",
+                    "index": 262184,
+                    "init": 120,
+                    "min": 0.01,
+                    "max": 200,
+                    "step": 0.01
+                },
+                {
+                    "type": "hslider",
+                    "label": "Spacing",
+                    "shortname": "Spacing",
+                    "address": "/midi_filter/Spacing",
+                    "index": 262224,
+                    "init": 0.05,
+                    "min": 0.01,
+                    "max": 1,
+                    "step": 0.001
+                },
+                {
+                    "type": "hslider",
+                    "label": "Volume",
+                    "shortname": "Volume",
+                    "address": "/midi_filter/Volume",
+                    "index": 262144,
+                    "init": 0.5,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.001
+                }
+            ]
+        }
+    ]
+}

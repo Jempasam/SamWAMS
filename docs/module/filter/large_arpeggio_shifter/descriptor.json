@@ -1,0 +1,25 @@
+{
+  "identifier": "fr.grame.faust.large_arpeggio_shifter",
+  "name": "large_arpeggio_shifter",
+  "vendor": "Samuel Demont",
+  "description": "A large pitch shifter based on an arpeggiator.",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "pitch shifter",
+    "pitch",
+    "arpeggio"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

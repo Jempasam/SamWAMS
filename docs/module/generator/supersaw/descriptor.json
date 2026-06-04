@@ -1,0 +1,25 @@
+{
+  "identifier": "fr.grame.faust.supersaw",
+  "name": "supersaw",
+  "vendor": "Jempasam",
+  "description": "7 sawtooth overlapped, with a detune relative to the previous sawtooth.",
+  "version": "0.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "oscillator",
+    "sawtooth",
+    "supersaw"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": false,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

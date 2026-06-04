@@ -1,0 +1,24 @@
+{
+    "identifier": "fr.grame.faust.midi_filter",
+    "name": "midi_filter",
+    "vendor": "Laurent Pottier",
+    "description": "An infinite glissando generator.",
+    "version": "1.0",
+    "apiVersion": "2.0.0",
+    "keywords": [
+        "module",
+        "generator",
+        "glissando"
+    ],
+    "isInstrument": true,
+    "website": "",
+    "hasAudioInput": false,
+    "hasAudioOutput": true,
+    "hasMidiInput": true,
+    "hasMidiOutput": false,
+    "faustMeta": {
+        "poly": true,
+        "fft": false,
+        "effect": null
+    }
+}
