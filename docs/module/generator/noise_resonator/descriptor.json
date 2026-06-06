@@ -1,0 +1,26 @@
+{
+  "identifier": "fr.grame.faust.noise_resonator",
+  "name": "noise_resonator",
+  "vendor": "Jempasam",
+  "description": "A resonance and noise based sound generator.",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "oscillator",
+    "resonance",
+    "generator",
+    "noise"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": false,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

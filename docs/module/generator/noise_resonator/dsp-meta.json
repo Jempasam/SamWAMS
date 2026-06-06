@@ -1,0 +1,223 @@
+{
+    "name": "noise_resonator",
+    "filename": "noise_resonator.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/noises.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/oscillators.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 393364,
+    "inputs": 0,
+    "outputs": 1,
+    "meta": [
+        {
+            "author": "Jempasam"
+        },
+        {
+            "back_color": "#923762"
+        },
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.18.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "description": "A resonance and noise based sound generator."
+        },
+        {
+            "filename": "noise_resonator.dsp"
+        },
+        {
+            "io": "->a"
+        },
+        {
+            "keywords": "module, oscillator, resonance, generator, noise"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "noise_resonator"
+        },
+        {
+            "noises.lib/name": "Faust Noise Generator Library"
+        },
+        {
+            "noises.lib/version": "1.4.1"
+        },
+        {
+            "oscillators.lib/name": "Faust Oscillator Library"
+        },
+        {
+            "oscillators.lib/version": "1.5.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.5.0"
+        },
+        {
+            "version": "1.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "noise_resonator",
+            "items": [
+                {
+                    "type": "vslider",
+                    "label": "Gain",
+                    "shortname": "Gain",
+                    "address": "/noise_resonator/Gain",
+                    "index": 393336,
+                    "meta": [
+                        {
+                            "style": "knob"
+                        }
+                    ],
+                    "init": 0.3,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                },
+                {
+                    "type": "hgroup",
+                    "label": "Other",
+                    "items": [
+                        {
+                            "type": "vslider",
+                            "label": "Noise Quantity",
+                            "shortname": "Noise_Quantity",
+                            "address": "/noise_resonator/Other/Noise_Quantity",
+                            "index": 262156,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 0.5,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "hgroup",
+                    "label": "Resonance",
+                    "items": [
+                        {
+                            "type": "vslider",
+                            "label": "Delay",
+                            "shortname": "Delay",
+                            "address": "/noise_resonator/Resonance/Delay",
+                            "index": 393276,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                },
+                                {
+                                    "unit": "s"
+                                }
+                            ],
+                            "init": 0.002,
+                            "min": 0.001,
+                            "max": 0.1,
+                            "step": 0.0001
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Feedback",
+                            "shortname": "Feedback",
+                            "address": "/noise_resonator/Resonance/Feedback",
+                            "index": 262188,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 0.939,
+                            "min": 0,
+                            "max": 0.999,
+                            "step": 0.001
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Mod Depth",
+                            "shortname": "Mod_Depth",
+                            "address": "/noise_resonator/Resonance/Mod_Depth",
+                            "index": 393288,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 0,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Mod Speed",
+                            "shortname": "Mod_Speed",
+                            "address": "/noise_resonator/Resonance/Mod_Speed",
+                            "index": 393304,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                },
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 1,
+                            "min": 0.1,
+                            "max": 20,
+                            "step": 0.1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

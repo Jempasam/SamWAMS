@@ -1,0 +1,329 @@
+{
+    "name": "fm3",
+    "filename": "fm3.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/oscillators.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/filters.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 262336,
+    "code": "0LH8",
+    "inputs": 0,
+    "outputs": 1,
+    "meta": [
+        {
+            "author": "Jempasam"
+        },
+        {
+            "back_color": "#9E378A"
+        },
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.18.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "description": "An oscillator modulating an oscillator modulating an oscillator"
+        },
+        {
+            "filename": "fm3.dsp"
+        },
+        {
+            "filters.lib/dcblocker:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/dcblocker:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/dcblocker:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/lowpass0_highpass1": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/name": "Faust Filters Library"
+        },
+        {
+            "filters.lib/pole:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/pole:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/pole:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/version": "1.3.0"
+        },
+        {
+            "filters.lib/zero:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/zero:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/zero:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "io": "->a"
+        },
+        {
+            "keywords": "module, oscillator, fm"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "fm3"
+        },
+        {
+            "oscillators.lib/name": "Faust Oscillator Library"
+        },
+        {
+            "oscillators.lib/version": "1.5.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.5.0"
+        },
+        {
+            "version": "1.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "fm3",
+            "items": [
+                {
+                    "type": "hgroup",
+                    "label": "Base",
+                    "meta": [
+                        {
+                            "1": ""
+                        }
+                    ],
+                    "items": [
+                        {
+                            "type": "vslider",
+                            "label": "Freq",
+                            "shortname": "Freq",
+                            "address": "/fm3/Base/Freq",
+                            "index": 262184,
+                            "meta": [
+                                {
+                                    "scale": "log"
+                                },
+                                {
+                                    "style": "knob"
+                                },
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 50,
+                            "min": 20,
+                            "max": 2000,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Gain",
+                            "shortname": "Gain",
+                            "address": "/fm3/Base/Gain",
+                            "index": 262164,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 0.3,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Shape",
+                            "shortname": "Shape",
+                            "address": "/fm3/Base/Shape",
+                            "index": 262292,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 1,
+                            "min": 0.01,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "hgroup",
+                    "label": "FM Op2",
+                    "meta": [
+                        {
+                            "2": ""
+                        }
+                    ],
+                    "items": [
+                        {
+                            "type": "vslider",
+                            "label": "Index 2",
+                            "shortname": "Index_2",
+                            "address": "/fm3/FM_Op2/Index_2",
+                            "index": 262196,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 4,
+                            "min": 0,
+                            "max": 25,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Ratio 2",
+                            "shortname": "Ratio_2",
+                            "address": "/fm3/FM_Op2/Ratio_2",
+                            "index": 262208,
+                            "meta": [
+                                {
+                                    "scale": "log"
+                                },
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 1.618,
+                            "min": 0.1,
+                            "max": 10,
+                            "step": 0.001
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Shape 2",
+                            "shortname": "Shape_2",
+                            "address": "/fm3/FM_Op2/Shape_2",
+                            "index": 262272,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 1,
+                            "min": 0.01,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "hgroup",
+                    "label": "FM Op3",
+                    "meta": [
+                        {
+                            "3": ""
+                        }
+                    ],
+                    "items": [
+                        {
+                            "type": "vslider",
+                            "label": "Index 3",
+                            "shortname": "Index_3",
+                            "address": "/fm3/FM_Op3/Index_3",
+                            "index": 262220,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 2,
+                            "min": 0,
+                            "max": 25,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Ratio 3",
+                            "shortname": "Ratio_3",
+                            "address": "/fm3/FM_Op3/Ratio_3",
+                            "index": 262232,
+                            "meta": [
+                                {
+                                    "scale": "log"
+                                },
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 2.414,
+                            "min": 0.1,
+                            "max": 10,
+                            "step": 0.001
+                        },
+                        {
+                            "type": "vslider",
+                            "label": "Shape 3",
+                            "shortname": "Shape_3",
+                            "address": "/fm3/FM_Op3/Shape_3",
+                            "index": 262252,
+                            "meta": [
+                                {
+                                    "style": "knob"
+                                }
+                            ],
+                            "init": 1,
+                            "min": 0.01,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

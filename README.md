@@ -67,10 +67,25 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 |Use |https://jempasam.github.io/SamWAMS/module/generator/fire/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#module/generator/fire        |
 
+|    |module\generator\fm3                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/fm3/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/fm3        |
+
+|    |module\generator\impulsion_resonator                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/impulsion_resonator/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/impulsion_resonator        |
+
 |    |module\generator\insects                         |
 |----|-------------------------------|
 |Use |https://jempasam.github.io/SamWAMS/module/generator/insects/index.js|
 |Test|https://jempasam.github.io/SamWAMS/#module/generator/insects        |
+
+|    |module\generator\noise_resonator                         |
+|----|-------------------------------|
+|Use |https://jempasam.github.io/SamWAMS/module/generator/noise_resonator/index.js|
+|Test|https://jempasam.github.io/SamWAMS/#module/generator/noise_resonator        |
 
 |    |module\generator\occillator                         |
 |----|-------------------------------|

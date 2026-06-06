@@ -1,0 +1,25 @@
+{
+  "identifier": "fr.grame.faust.impulsion_resonator",
+  "name": "impulsion_resonator",
+  "vendor": "Jempasam",
+  "description": "A resonance and impulsion based sound generator.",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "oscillator",
+    "resonance",
+    "generator"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": false,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

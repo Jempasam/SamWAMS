@@ -1,0 +1,24 @@
+{
+  "identifier": "fr.grame.faust.fm3",
+  "name": "fm3",
+  "vendor": "Jempasam",
+  "description": "An oscillator modulating an oscillator modulating an oscillator",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "oscillator",
+    "fm"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": false,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}
