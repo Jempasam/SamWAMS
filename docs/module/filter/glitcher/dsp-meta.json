@@ -1,0 +1,154 @@
+{
+    "name": "glitcher",
+    "filename": "glitcher.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/noises.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 104,
+    "code": "MLfN",
+    "inputs": 2,
+    "outputs": 2,
+    "meta": [
+        {
+            "author": "Jempasam"
+        },
+        {
+            "back_color": "#372257"
+        },
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.18.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "description": "Make the sound glitch. "
+        },
+        {
+            "filename": "glitcher.dsp"
+        },
+        {
+            "io": "a->a"
+        },
+        {
+            "keywords": "module, filter, glitch, bug"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "glitcher"
+        },
+        {
+            "noises.lib/name": "Faust Noise Generator Library"
+        },
+        {
+            "noises.lib/version": "1.4.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.5.0"
+        },
+        {
+            "version": "1.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "glitcher",
+            "items": [
+                {
+                    "type": "hslider",
+                    "label": "Depth",
+                    "shortname": "Depth",
+                    "address": "/glitcher/Depth",
+                    "index": 68,
+                    "meta": [
+                        {
+                            "style": "knob"
+                        }
+                    ],
+                    "init": 1,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                },
+                {
+                    "type": "hslider",
+                    "label": "Dust Density",
+                    "shortname": "Dust_Density",
+                    "address": "/glitcher/Dust_Density",
+                    "index": 36,
+                    "meta": [
+                        {
+                            "style": "knob"
+                        },
+                        {
+                            "unit": "Hz"
+                        }
+                    ],
+                    "init": 10,
+                    "min": 1,
+                    "max": 50,
+                    "step": 0.1
+                },
+                {
+                    "type": "hslider",
+                    "label": "Void Size",
+                    "shortname": "Void_Size",
+                    "address": "/glitcher/Void_Size",
+                    "index": 44,
+                    "meta": [
+                        {
+                            "style": "knob"
+                        }
+                    ],
+                    "init": 0.2,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                }
+            ]
+        }
+    ]
+}

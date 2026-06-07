@@ -1,0 +1,25 @@
+{
+  "identifier": "fr.grame.faust.bit_crusher",
+  "name": "bit_crusher",
+  "vendor": "Jempasam",
+  "description": "A simple bit crusher effect.",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "filter",
+    "video game",
+    "bit crusher"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

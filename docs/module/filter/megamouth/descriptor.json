@@ -1,0 +1,26 @@
+{
+  "identifier": "fr.grame.faust.megamouth",
+  "name": "megamouth",
+  "vendor": "Jempasam",
+  "description": "Simulates sound waves in the human vocal tract to make vowel sounds. ",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "filter",
+    "voice",
+    "mouth",
+    "vocal"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

@@ -19,15 +19,18 @@ function getWamRoots() {
 // Write to JSON
 fs.writeFileSync(path.join(__dirname, 'docs/wams.json'), JSON.stringify(getWamRoots(), null, 2))
 
-// Write to READMED
+// Write to README
 let list = ""
 for(const wam of getWamRoots()) {
     const modified = wam.replaceAll("\\", "/")
+    const descriptor = JSON.parse(fs.readFileSync(`${WAM_ROOT}/${modified}/descriptor.json`))
     list += `
-|    |${wam}                         |
-|----|-------------------------------|
-|Use |${WEB_ROOT}${modified}/index.js|
-|Test|${WEB_ROOT}#${modified}        |
+|    | ${wam  .padEnd(100," ")}|
+|----|-${"" .padEnd(100,"-")}|
+|Name| ${(descriptor.name+" "+descriptor.version) .padEnd(100," ")}|
+|Desc| ${descriptor.description .padEnd(100," ")}|
+|Use | ${(WEB_ROOT+modified+"/index.js") .padEnd(100," ")}|
+|Test| ${(WEB_ROOT+"#"+modified) .padEnd(100," ")}|
 `
 }
 
