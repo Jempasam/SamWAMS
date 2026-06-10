@@ -1,6 +1,6 @@
 {
-    "identifier": "fr.grame.faust.midi_filter",
-    "name": "midi_filter",
+    "identifier": "fr.grame.faust.endlessrisset",
+    "name": "EndlessRisset",
     "vendor": "Laurent Pottier",
     "description": "An infinite glissando generator.",
     "version": "1.0",
@@ -10,14 +10,14 @@
         "generator",
         "glissando"
     ],
-    "isInstrument": true,
+    "isInstrument": false,
     "website": "",
     "hasAudioInput": false,
     "hasAudioOutput": true,
     "hasMidiInput": true,
     "hasMidiOutput": false,
     "faustMeta": {
-        "poly": true,
+        "poly": false,
         "fft": false,
         "effect": null
     }

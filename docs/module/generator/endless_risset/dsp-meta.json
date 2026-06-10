@@ -1,8 +1,8 @@
 {
-    "name": "midi_filter",
-    "filename": "midi_filter.dsp",
+    "name": "EndlessRisset",
+    "filename": "EndlessRisset.dsp",
     "version": "2.74.8",
-    "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
     "library_list": [
         "/usr/share/faust/stdfaust.lib",
         "/usr/share/faust/oscillators.lib",
@@ -18,7 +18,7 @@
         "."
     ],
     "size": 262324,
-    "code": "SOI=",
+    "code": "MN4=",
     "inputs": 0,
     "outputs": 2,
     "meta": [
@@ -35,7 +35,7 @@
             "basics.lib/version": "1.18.0"
         },
         {
-            "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
         },
         {
             "copyright": "(c)ECLLA 2022"
@@ -44,7 +44,7 @@
             "description": "An infinite glissando generator."
         },
         {
-            "filename": "midi_filter.dsp"
+            "filename": "EndlessRisset.dsp"
         },
         {
             "keywords": "module, generator, glissando"
@@ -68,7 +68,7 @@
             "maths.lib/version": "2.8.0"
         },
         {
-            "name": "midi_filter"
+            "name": "EndlessRisset"
         },
         {
             "oscillators.lib/lf_sawpos_phase:author": "Bart Brouns, revised by Stéphane Letz"
@@ -101,20 +101,20 @@
     "ui": [
         {
             "type": "vgroup",
-            "label": "midi_filter",
+            "label": "EndlessRisset",
             "items": [
                 {
                     "type": "checkbox",
                     "label": "Direction",
                     "shortname": "Direction",
-                    "address": "/midi_filter/Direction",
+                    "address": "/EndlessRisset/Direction",
                     "index": 262176
                 },
                 {
                     "type": "hslider",
                     "label": "Median",
                     "shortname": "Median",
-                    "address": "/midi_filter/Median",
+                    "address": "/EndlessRisset/Median",
                     "index": 262212,
                     "init": 0.5,
                     "min": 0,
@@ -125,7 +125,7 @@
                     "type": "hslider",
                     "label": "Period",
                     "shortname": "Period",
-                    "address": "/midi_filter/Period",
+                    "address": "/EndlessRisset/Period",
                     "index": 262184,
                     "init": 120,
                     "min": 0.01,
@@ -136,7 +136,7 @@
                     "type": "hslider",
                     "label": "Spacing",
                     "shortname": "Spacing",
-                    "address": "/midi_filter/Spacing",
+                    "address": "/EndlessRisset/Spacing",
                     "index": 262224,
                     "init": 0.05,
                     "min": 0.01,
@@ -147,7 +147,7 @@
                     "type": "hslider",
                     "label": "Volume",
                     "shortname": "Volume",
-                    "address": "/midi_filter/Volume",
+                    "address": "/EndlessRisset/Volume",
                     "index": 262144,
                     "init": 0.5,
                     "min": 0,
