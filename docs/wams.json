@@ -4,6 +4,7 @@
   "module\\filter\\bandpass_resonant",
   "module\\filter\\bit_crusher",
   "module\\filter\\continuous_midi_filter",
+  "module\\filter\\gain",
   "module\\filter\\glitcher",
   "module\\filter\\large_arpeggio_shifter",
   "module\\filter\\megamouth",

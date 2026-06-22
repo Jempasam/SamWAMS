@@ -42,6 +42,13 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 |Use | https://jempasam.github.io/SamWAMS/module/filter/continuous_midi_filter/index.js                    |
 |Test| https://jempasam.github.io/SamWAMS/#module/filter/continuous_midi_filter                            |
 
+|    | module\filter\gain                                                                                  |
+|----|-----------------------------------------------------------------------------------------------------|
+|Name| gain 1.0                                                                                            |
+|Desc| A simple gain.                                                                                      |
+|Use | https://jempasam.github.io/SamWAMS/module/filter/gain/index.js                                      |
+|Test| https://jempasam.github.io/SamWAMS/#module/filter/gain                                              |
+
 |    | module\filter\glitcher                                                                              |
 |----|-----------------------------------------------------------------------------------------------------|
 |Name| glitcher 1.0                                                                                        |
@@ -100,7 +107,7 @@ Test host [here](https://jempasam.github.io/SamWAMS/)
 
 |    | module\generator\endless_risset                                                                     |
 |----|-----------------------------------------------------------------------------------------------------|
-|Name| midi_filter 1.0                                                                                     |
+|Name| EndlessRisset 1.0                                                                                   |
 |Desc| An infinite glissando generator.                                                                    |
 |Use | https://jempasam.github.io/SamWAMS/module/generator/endless_risset/index.js                         |
 |Test| https://jempasam.github.io/SamWAMS/#module/generator/endless_risset                                 |

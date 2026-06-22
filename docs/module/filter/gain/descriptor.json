@@ -1,0 +1,26 @@
+{
+  "identifier": "fr.grame.faust.gain",
+  "name": "gain",
+  "vendor": "Jempasam",
+  "description": "A simple gain.",
+  "version": "1.0",
+  "apiVersion": "2.0.0",
+  "keywords": [
+    "module",
+    "filter",
+    "gain",
+    "volume",
+    "amplitude"
+  ],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false,
+  "faustMeta": {
+    "poly": false,
+    "fft": false,
+    "effect": null
+  }
+}

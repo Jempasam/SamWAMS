@@ -1,0 +1,72 @@
+{
+    "name": "gain",
+    "filename": "gain.dsp",
+    "version": "2.74.8",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 8,
+    "code": "9AEf",
+    "inputs": 1,
+    "outputs": 1,
+    "meta": [
+        {
+            "author": "Jempasam"
+        },
+        {
+            "back_color": "#824B57"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "description": "A simple gain."
+        },
+        {
+            "filename": "gain.dsp"
+        },
+        {
+            "io": "a->a"
+        },
+        {
+            "keywords": "module, filter, gain, volume, amplitude"
+        },
+        {
+            "name": "gain"
+        },
+        {
+            "version": "1.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "gain",
+            "items": [
+                {
+                    "type": "hslider",
+                    "label": "Gain",
+                    "shortname": "Gain",
+                    "address": "/gain/Gain",
+                    "index": 0,
+                    "meta": [
+                        {
+                            "style": "knob"
+                        }
+                    ],
+                    "init": 1,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                }
+            ]
+        }
+    ]
+}
