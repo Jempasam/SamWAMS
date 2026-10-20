@@ -14,7 +14,7 @@
     "website": "",
     "hasAudioInput": false,
     "hasAudioOutput": true,
-    "hasMidiInput": true,
+    "hasMidiInput": false,
     "hasMidiOutput": false,
     "faustMeta": {
         "poly": false,
